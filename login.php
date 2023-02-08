@@ -58,16 +58,16 @@ if(isset($_POST['username']) && isset($_POST['password'])){
                 <div class="container" style="width: 30%; margin: auto;">
                     <br>
 
-                    <label for="username">Username:</label>
+                    <label style="color:white; font-size:20px; font-weight:bold" for="username">Username:</label>
                     <input type="text" name="username" class="form-control" required>
                     <br>
 
-                    <label for="password">Password:</label>
+                    <label style="color:white; font-size:20px; font-weight:bold"for="password">Password:</label>
                     <input type="password" name="password" class="form-control" required>
                     <br>
 
-                    <button type="submit" class="btn btn-primary" style="background-color:#93bcc8; width: 80%; margin-left: 10%; margin-top:5%; border: 1px #80da62;" name="submit">
-                    Login</button>
+                    <button type="submit" class="btn btn-primary" style="background-color:#97b9b5; width: 80%; margin-left: 10%; margin-top:5%; border: 1px #80da62;font-size:20px; font-weight:bold" 
+                    name="submit"> Login</button>
                     <br><br>
                 </div>
             </form>

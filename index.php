@@ -3,7 +3,6 @@ include 'konekcija.php';
 include 'model/destinacija.php';
 include 'model/vrsta.php';
 
-
 session_start();
 
 $user="";
@@ -35,19 +34,23 @@ if (isset($_COOKIE["admin"]))
 
 </head>
 
-<body class="stranica" style="margin-bottom:100px">
+<body class="stranica" 
+style="margin-bottom:100px ;
+    background-image: url(https://wallpaperaccess.com/full/2601987.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;">
    
-    <nav class="navbar navbar-expand-lg navbar-light" id="navCont" style="height:80px; ">
+    <nav class="navbar navbar-expand-lg navbar-light" id="navCont" style="height:80px; background-color: #F4F4E9; ">
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <a class="navbar-brand " href="index.php"style="color:white ; margin-top:10px ;font-size:29px">Travel Agent</a>
-                <div class="navbar-nav p-lg-0 " style="margin-left: 54%; color:white ; ">
-                    <li><a id="btn-Pocetna" href="index.php" type="button" class="btn btn-success btn-block" style="margin-top:-60px; margin-left:18px ; margin-right:18px ">
+                <a class="navbar-brand " href="index.php"style="color:#4E7779 ; margin-top:5px ;font-size:29px">Travel Agent</a>
+                <div class="navbar-nav p-lg-0 " style="margin-left: 28%; color:white ; ">
+                    <li><a id="btn-Pocetna" href="index.php" type="button" class="btn btn-success btn-block" style=" margin-left:25px ; margin-right:50px; background-color: #90C7CA;color:white; font-size:17px; font-weight:bold " ">
                         Home</a></li>
-                    <li><a id="btn-Dodaj" type="button" class="btn btn-success btn-block"  data-toggle="modal" data-target="#my" style="margin-top:-60px; margin-left:18px ; margin-right:18px">
-                        Dodaj destinaciju</a></li>
-                    <li><a id="btn-Prikazi" href="pogledajVina.php" type="button" class="btn btn-success btn-block"style="margin-top:-60px; margin-left:18px; margin-right:18px">
-                        Pogledaj destinacije</a></li>
-                    <li><a id="btn-Pocetna" href="odjava.php" type="button" class="btn btn-success btn-block" style=" color:white; margin-left:60px; margin-top:-60px">
+                    <li><a id="btn-Dodaj" type="button" class="btn btn-success btn-block"  data-toggle="modal" data-target="#my" style=" margin-left:50px ; margin-right:80px; background-color:#90C7CA ;color:white; font-size:17px; font-weight:bold">
+                        Dodaj </a></li>
+                    <li><a id="btn-Prikazi" href="pogledajVina.php" type="button" class="btn btn-success btn-block"style=" margin-left:80px; margin-right:100px; background-color:#90C7CA ;color:white; font-size:17px; font-weight:bold">
+                        Destinacije</a></li>
+                    <li><a id="btn-Pocetna" href="odjava.php" type="button" class="btn btn-success btn-block" style=" color:white; margin-left:100px; background-color:#b7c098 ;color:white; font-size:17px; font-weight:bold ">
                     Odjava</a> </li>
                 </div>
                 
