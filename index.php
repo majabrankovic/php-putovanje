@@ -71,6 +71,57 @@ style="margin-bottom:100px ;background-image: url(https://wallpaperaccess.com/fu
         </div>
     </div>
 
+    <div class="modal fade" id="my" role="dialog" style="margin-top:10px">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container prijava-form">
+                        <form action="#" method="post" id="dodajForm">
+                            <h3 style="color: black; text-align: center">Dodaj novu destinaciju</h3>
+                            <div class="row">
+                                <div class="col-md-11 ">
+                                    <div class="form-group">
+                                        <label for="">Naziv destinacije</label>
+                                        <input type="text" style="border: 1px solid black" name="nazivDestinacije" class="form-control" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Broj Ljudi</label>
+                                        <input type="text" style="border: 1px solid black" name="brojLjudi" class="form-control" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Cena aranzmana</label>
+                                        <input type="text" style="border: 1px solid black" name="cena" class="form-control" />
+                                    </div>
+                                    <div class="form-group">
+                                        <select id="vrstaId" name="vrstaId" class="form-control">
+                                            <?php
+                                            $rez = $conn->query("SELECT * from vrsta");
+                                            while ($red = $rez->fetch_array()) {
+                                            ?>
+                                                <option name="value" value="<?php echo $red['vrstaId'] ?>"> <?php echo $red['nazivVrste'] ?></option>
+                                            <?php  }
+                                            ?>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <button id="btnDodaj" type="submit" class="btn btn-success btn-block" tyle="background-color: orange; border: 1px solid black;">
+                                            Dodaj destinaciju</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
 
     <div class="container pt" style="margin-top:200px; margin-bottom: 300px; ">
     <div id="searchDiv" >

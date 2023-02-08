@@ -16,11 +16,11 @@ $('#dodajForm').submit(function () {
   });
 
   req.done(function (res, textStatus, jqXHR) {
-    if (res == "Ok") {
+    if (res.indexOf("Ok") != -1) {
       alert("Destinacija je dodata");
       location.reload(true);
     } else console.log("Destinacija nije dodata" + res);
-  });
+});
 
   req.fail(function (jqXHR, textStatus, errorThrown) {
     console.error('Desila se greska: ' + textStatus, errorThrown)

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 08, 2023 at 08:40 PM
+-- Generation Time: Feb 08, 2023 at 11:17 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -60,15 +60,17 @@ CREATE TABLE `destinacija` (
 --
 
 INSERT INTO `destinacija` (`destinacijaId`, `nazivDestinacije`, `brojLjudi`, `cena`, `vrstaId`) VALUES
-(1, 'Lefkada', 4, '80000.00', 1),
-(2, 'Krit ', 2, '70000.00', 1),
-(3, 'Kopaonik', 1, '12000.00', 2),
-(4, 'Egipat', 2, '90000.00', 3),
-(5, 'Tajland', 1, '80000.00', 3),
-(6, 'Kuba', 2, '120000.00', 3),
-(7, 'Pariz', 3, '100000.00', 4),
-(8, 'Prag', 5, '120000.00', 4),
-(9, 'Bec', 5, '80000.00', 4);
+(1, 'Lefkada', 2, '60000.00', 1),
+(2, 'Rim', 2, '100000.00', 4),
+(3, 'Bec', 3, '60000.00', 4),
+(4, 'Tajland', 2, '120000.00', 3),
+(5, 'Paris', 2, '100000.00', 4),
+(6, 'London', 1, '80000.00', 4),
+(7, 'Egipat', 2, '120000.00', 3),
+(8, 'Alpi', 3, '90000.00', 2),
+(9, 'Krit', 4, '80000.00', 1),
+(10, 'Positano', 1, '70000.00', 1),
+(11, 'Kuba', 2, '130000.00', 3);
 
 -- --------------------------------------------------------
 
@@ -125,6 +127,12 @@ ALTER TABLE `administrator`
   MODIFY `administratorId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
+-- AUTO_INCREMENT for table `destinacija`
+--
+ALTER TABLE `destinacija`
+  MODIFY `destinacijaId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
 -- AUTO_INCREMENT for table `vrsta`
 --
 ALTER TABLE `vrsta`
@@ -138,7 +146,7 @@ ALTER TABLE `vrsta`
 -- Constraints for table `destinacija`
 --
 ALTER TABLE `destinacija`
-  ADD CONSTRAINT `destinacija_ibfk_2` FOREIGN KEY (`vrstaId`) REFERENCES `vrsta` (`vrstaId`);
+  ADD CONSTRAINT `destinacija_ibfk_1` FOREIGN KEY (`vrstaId`) REFERENCES `vrsta` (`vrstaId`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

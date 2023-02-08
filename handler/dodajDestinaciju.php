@@ -8,9 +8,9 @@
   $rez=$destinacija->insert($conn);
   
   if($rez){ //ako vrati destinaciju
-    echo 'Dobro je';
+    echo 'Ok';
  }else{ 
-   echo 'Nije dobro';
+   echo 'No';
  }
  } 
   ?>
