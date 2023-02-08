@@ -4,7 +4,7 @@
   ini_set("log_errors", true);
 
 
-  $conn = new MySqli('localhost', 'root','','vinarija');
+  $conn = new MySqli('localhost', 'root','','putovanje');
   $conn->set_charset("utf8");
  ?>
  
