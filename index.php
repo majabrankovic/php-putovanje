@@ -39,9 +39,9 @@ style="margin-bottom:100px ;background-image: url(https://wallpaperaccess.com/fu
     background-size: 2000px 1300px;"
     >
    
-    <nav class="navbar navbar-expand-lg navbar-light" id="navCont" style="height:80px; background-color: #F4F4E9; ">
+    <nav class="navbar navbar-expand-lg navbar-light" id="navCont" style="height:90px; background-color: #F4F4E9; ">
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <a class="navbar-brand " href="index.php"style="color:#4E7779 ; margin-top:5px ;font-size:29px">Travel Agent</a>
+                <a class="navbar-brand " href="index.php"style="color:#4E7779 ; margin-top:20px ;font-size:29px">Travel Agent</a>
                 <div class="navbar-nav p-lg-0 " style="margin-left: 28%; color:white ; ">
                     <li><a id="btn-Pocetna" href="index.php" type="button" class="btn btn-success btn-block" style=" margin-left:25px ; margin-right:50px; background-color: #90C7CA;color:white; font-size:17px; font-weight:bold " ">
                         Home</a></li>
