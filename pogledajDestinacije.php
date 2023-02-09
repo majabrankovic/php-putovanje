@@ -152,8 +152,8 @@ if (isset($_POST['vrsta'])) {
             <form action="#" method="post" id="izmeniForma">
 
 
-              <h3 style="color: #90C7CA; text-align: center;font-size:25px">Azuriraj podatke o destinaciji</h3>
-              <div class="row">
+              <h3 style="color: #90C7CA; text-align:left ;font-size:25px">Azuriraj podatke o destinaciji</h3>
+              <div class="row" style="margin-right:650px">
                 <div class="col-md-11 ">
 
                   <div style="display: none;" class="form-group">
@@ -162,20 +162,20 @@ if (isset($_POST['vrsta'])) {
                   </div>
 
                   <div class="form-group" style="display: none;">
-                    <label style="color:#EFB9AD;font-size:18px" for="">vrstaId</label>
+                    <label style="color:#4E7779;font-size:18px" for="">vrstaId</label>
                     <input id="vrstaId"  type="text" style="border: 1px solid #90C7CA" name="vrsta" class="form-control" />
                   </div>
                   <div class="form-group">
-                    <label style="color:#EFB9AD;font-size:18px" for="">Naziv destinacije</label>
+                    <label style="color:#4E7779;font-size:18px" for="">Naziv destinacije</label>
                     <input id="nazivDestinacije" type="text" style="border: 1px solid #90C7CA" name="nazivDestinacije" class="form-control" />
                   </div>
                   <div class="form-group">
-                    <label style="color:#EFB9AD;font-size:18px" for="">Broj ljudi</label>
+                    <label style="color:#4E7779;font-size:18px" for="">Broj ljudi</label>
                     <input id="brojLjudi" type="text" style="border: 1px solid #90C7CA" name="brojLjudi" class="form-control" />
                   </div>
                  
                   <div class="form-group">
-                    <button id="btnIzmeni" type="submit" class="btn btn-success btn-block" style="background-color:#EFB9AD ; color:white ; font-weight:bold; padding-top:10px; font-size:17px">
+                    <button id="btnIzmeni" type="submit" class="btn btn-success btn-block" style="background-color:#4E7779 ; color:white ; font-weight:bold; padding-top:10px; font-size:17px">
                     Izmeni destinaciju</button>
                   </div>
                 </div>

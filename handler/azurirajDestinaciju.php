@@ -14,9 +14,9 @@
   $rezultat=$destinacija->update($conn);
   
   if($rezultat){
-    echo 'Dobro';
+    echo 'Ok';
  }else{ 
-   echo 'Nije dobro';
+   echo 'No';
    echo $status;
  }
  } 
