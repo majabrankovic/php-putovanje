@@ -27,7 +27,7 @@ if (isset($_COOKIE["admin"]))
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Travel Agent</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link href="css/main.css" rel="stylesheet">
 
@@ -59,7 +59,7 @@ style="margin-bottom:100px ;background-image: url(https://wallpaperaccess.com/fu
         <div id="box" >
         <div class="container"style="background-color: none" >
             <div class="row">
-                <div class="tekst" style="background-color: #C3BA9B; margin-top:70px ; text-align: center; padding-left: 30px; padding-right: 30px; border-radius: 20px;  ">
+                <div class="tekst" style="background-color: #C3BA9B; margin-top:70px ; text-align: center; margin-right:400px; padding:20px; border-radius: 20px;  ">
                     <h2 style="color:white ;text-decoration:underline; "> Putovanja su početak svake avanture.</h2>
                     <p style="color:#F4F4E9 ;font-size:20px; padding-top:20px"> 
                     Putovanje nam omogućava da vidimo svet i upoznamo nove kulture.<br></br>
@@ -78,22 +78,22 @@ style="margin-bottom:100px ;background-image: url(https://wallpaperaccess.com/fu
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" >
                     <div class="container prijava-form">
                         <form action="#" method="post" id="dodajForm">
-                            <h3 style="color: black; text-align: center">Dodaj novu destinaciju</h3>
-                            <div class="row">
+                            <h3 style="color:#4E7779; text-align: left ">Dodaj novu destinaciju</h3>
+                            <div class="row" style="margin-right:650px">
                                 <div class="col-md-11 ">
                                     <div class="form-group">
-                                        <label for="">Naziv destinacije</label>
+                                        <label style="color:#4E7779" for="">Naziv destinacije</label>
                                         <input type="text" style="border: 1px solid black" name="nazivDestinacije" class="form-control" />
                                     </div>
                                     <div class="form-group">
-                                        <label for="">Broj Ljudi</label>
+                                        <label style="color:#4E7779"for="">Broj Ljudi</label>
                                         <input type="text" style="border: 1px solid black" name="brojLjudi" class="form-control" />
                                     </div>
                                     <div class="form-group">
-                                        <label for="">Cena aranzmana</label>
+                                        <label style="color:#4E7779" for="">Cena aranzmana</label>
                                         <input type="text" style="border: 1px solid black" name="cena" class="form-control" />
                                     </div>
                                     <div class="form-group">
@@ -108,7 +108,7 @@ style="margin-bottom:100px ;background-image: url(https://wallpaperaccess.com/fu
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <button id="btnDodaj" type="submit" class="btn btn-success btn-block" tyle="background-color: orange; border: 1px solid black;">
+                                        <button id="btnDodaj" type="submit" class="btn btn-success btn-block" style="background-color: #90C7CA">
                                             Dodaj destinaciju</button>
                                     </div>
                                 </div>

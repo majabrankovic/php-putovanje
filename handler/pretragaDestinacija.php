@@ -22,7 +22,7 @@
             <th scope="col">Vrsta destinacije</th>
         </tr>
     </thead>
-    <tbody style=" background-color:#C3BA9B ; color:#white" >
+    <tbody style=" color:white" >
         <?php echo "<br>"?>
         <?php echo "<br>"?>
         <?php echo "<br>"?>
